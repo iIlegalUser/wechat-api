@@ -1,0 +1,17 @@
+# 通用eureka-client、feign、jackson、日志时间输出格式配置
+feign:
+  okhttp:
+    enabled: true
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8915/eureka
+spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+logging:
+  pattern:
+    dateformat: yyyy-MM-dd HH:mm:ss

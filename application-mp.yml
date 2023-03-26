@@ -1,0 +1,27 @@
+# 通用数据库及mybatis-plus配置
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://42.192.40.227:3306/compound?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8&allowPublicKeyRetrieval=true
+    username: root
+    password: 766248235
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      minimum-idle: 5
+      connection-test-query: SELECT 1 FROM DUAL
+      maximum-pool-size: 20
+      auto-commit: true
+      idle-timeout: 30000
+      pool-name: ApiHikariCP
+      max-lifetime: 60000
+      connection-timeout: 30000
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    auto-mapping-behavior: full
+  #    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # 开启sql日志(控制台打印sql语句)
+  global-config:
+    db-config:
+      logic-not-delete-value: 1
+      logic-delete-value: 0
+  mapper-locations: classpath:xml/*.xml

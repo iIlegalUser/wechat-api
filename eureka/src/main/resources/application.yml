@@ -1,0 +1,20 @@
+server:
+  port: 8915
+spring:
+  application:
+    name: eureka
+eureka:
+  server:
+    enable-self-preservation: false # enabled in proc env
+    eviction-interval-timer-in-ms: 10000
+    expected-client-renewal-interval-seconds: 60
+  instance:
+    hostname: ${spring.application.name}
+    prefer-ip-address: true
+    instance-id: http://localhost:${server.port}/eureka/
+    lease-renewal-interval-in-seconds: 60
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:${server.port}/eureka/
+    fetch-registry: false
+    register-with-eureka: false
