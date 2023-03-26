@@ -17,7 +17,7 @@
         </dependency>-->
         <dependency>
             <groupId>com.example</groupId>
-            <artifactId>common</artifactId>
+            <artifactId>comm</artifactId>
         </dependency>
 
         <!--数据库相关-->
