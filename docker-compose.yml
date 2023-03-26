@@ -1,0 +1,37 @@
+version: '3'
+services:
+  eureka:
+    ports:
+      - '8915:8915'
+    networks:
+      - wechat
+    build:
+      context: eureka
+      dockerfile: Dockerfile
+  gateway:
+    ports:
+      - '8950:8950'
+    networks:
+      - wechat
+    build:
+      context: gateway
+      dockerfile: Dockerfile
+  news:
+    ports:
+      - '8900:8900'
+    networks:
+      - wechat
+    build:
+      context: news
+      dockerfile: Dockerfile
+  user:
+    ports:
+      - '8901:8901'
+    networks:
+      - wechat
+    build:
+      context: user
+      dockerfile: Dockerfile
+networks:
+  wechat:
+    driver: bridge
