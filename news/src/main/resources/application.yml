@@ -4,6 +4,6 @@ spring:
   application:
     name: news
   profiles:
-    active:
+    include:
       - comm
       - mp

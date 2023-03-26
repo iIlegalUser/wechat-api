@@ -4,7 +4,7 @@ spring:
   application:
     name: user
   profiles:
-    active:
+    include:
       - comm
       - mp
 #logging:
