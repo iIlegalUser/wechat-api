@@ -23,7 +23,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.example.gateway.GatewayApplication</mainClass>
+                    <mainClass>com.example.eureka.EurekaApplication</mainClass>
                     <outputDirectory>${project.basedir}/</outputDirectory>
                 </configuration>
             </plugin>
