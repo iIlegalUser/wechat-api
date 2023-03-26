@@ -28,7 +28,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <mainClass>com.example.gateway.GatewayApplication</mainClass>
-                    <outputDirectory>${project.basedir}/../jars</outputDirectory>
+                    <outputDirectory>${project.basedir}/</outputDirectory>
                 </configuration>
             </plugin>
         </plugins>

@@ -58,7 +58,7 @@
                         </exclude>
                     </excludes>
                     <mainClass>com.example.news.NewsApplication</mainClass>
-                    <outputDirectory>${project.basedir}/../jars</outputDirectory>
+                    <outputDirectory>${project.basedir}/</outputDirectory>
                 </configuration>
             </plugin>
         </plugins>

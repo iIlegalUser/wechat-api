@@ -56,7 +56,7 @@
                         </exclude>
                     </excludes>
                     <mainClass>com.example.user.UserApplication</mainClass>
-                    <outputDirectory>${project.basedir}/../jars</outputDirectory>
+                    <outputDirectory>${project.basedir}/</outputDirectory>
                 </configuration>
             </plugin>
         </plugins>
