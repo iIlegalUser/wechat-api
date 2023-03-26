@@ -3,7 +3,7 @@
 
 **/src/main/**/target/
 **/src/test/**/target/
-jars/
+*.jar
 ### STS ###
 .apt_generated
 .classpath
