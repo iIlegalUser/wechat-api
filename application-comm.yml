@@ -7,7 +7,7 @@ eureka:
     prefer-ip-address: true
   client:
     service-url:
-      defaultZone: http://localhost:8915/eureka
+      defaultZone: http://42.192.40.227:8915/eureka
 spring:
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
