@@ -24,6 +24,16 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <!-- 指定打包的jar包输出路径-->
+                    <outputDirectory>
+                        ${project.basedir}/../jars
+                    </outputDirectory>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 </project>
